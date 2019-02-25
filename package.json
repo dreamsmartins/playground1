@@ -3,8 +3,8 @@
     "version": "0.0.0",
     "private": true,
     "scripts": {
-        "start": "node ./bin/www",
-        "dev": "SET DEBUG=playground1:* & npm start"
+        "start": "node app.js",
+        "dev": "SET DEBUG=express-locallibrary-tutorial:* & npm start"
     },
     "dependencies": {
         "body-parser": "^1.18.3",
@@ -15,7 +15,7 @@
         "mongodb": "^3.1.12",
         "mongoose": "^5.4.5",
         "morgan": "~1.9.0",
-        "pug": "2.0.0-beta11"
+        "pug": "^2.0.3"
     },
     "description": "Kitchen sink JS playing, building and testing",
     "main": "index.js",
@@ -23,7 +23,8 @@
         "@babel/cli": "^7.2.3",
         "@babel/core": "^7.2.2",
         "@babel/preset-env": "^7.2.3",
-        "nodemon": "^1.18.9"
+        "chalk": "^2.4.2",
+        "nodemon": "^1.18.10"
     },
     "repository": {
         "type": "git",
